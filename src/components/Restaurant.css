@@ -1,3 +1,11 @@
 .restaurant-name {
     color: purple;
 }
+
+.high-rating {
+    color:green;
+}
+
+.rating {
+    color: black;
+}
