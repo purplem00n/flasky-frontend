@@ -3,7 +3,6 @@ import PropTypes from "prop-types";
 
 
 const Restaurant = ({id, name, cuisine, rating, distance, updateRating, deleteRestaurant}) => {
-    // const [updatedRating, setRating] = useState(rating)
 
     const determineColor = () => {
         if (rating > 5) {
@@ -33,7 +32,8 @@ Restaurant.propTypes = {
     cuisine: PropTypes.string.isRequired,
     rating: PropTypes.number.isRequired,
     distance: PropTypes.number.isRequired,
-    updateRating: PropTypes.func.isRequired
+    updateRating: PropTypes.func.isRequired,
+    deleteRestaurant: PropTypes.func.isRequired,
 };
 
 export default Restaurant;

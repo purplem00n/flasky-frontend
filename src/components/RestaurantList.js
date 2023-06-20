@@ -30,7 +30,9 @@ RestaurantList.propTypes = {
         cuisine: PropTypes.string.isRequired,
         rating: PropTypes.number.isRequired,
         distance: PropTypes.number.isRequired,
-    })).isRequired // we need a list of dictionaries/array of objects. OR can specify further by saying what shape the object should be.
+    })).isRequired, // we need a list of dictionaries/array of objects. OR can specify further by saying what shape the object should be.
+    updateRating: PropTypes.func.isRequired,
+    deleteRestaurant: PropTypes.func.isRequired,
 };
 
 export default RestaurantList;
